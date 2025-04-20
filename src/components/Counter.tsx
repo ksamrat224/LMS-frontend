@@ -8,7 +8,7 @@ const Counter = () => {
     <h1 className="text-3xl font-bold text-gray-800 mb-4">Count: {count}</h1>
     <div className="flex gap-4 mt-2">
       <button
-        onClick={() => setCount(count + 1)}
+        onClick={() =>{if(count<100) setCount(count + 1)}}
         className="bg-blue-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition-colors"
       >
         Increment
